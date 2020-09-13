@@ -15,6 +15,8 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .projects-main-section .title {
@@ -121,7 +123,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 100vw;
+  max-width: 1440px;
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
