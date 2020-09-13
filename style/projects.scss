@@ -181,6 +181,7 @@
     .content {
       display: none;
       overflow: scroll;
+      flex-direction: column;
       .title {
         text-align: center;
       }

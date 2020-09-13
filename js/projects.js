@@ -2,7 +2,7 @@ const dialog = document.getElementById("dialog");
 let element;
 function openDialog(id) {
   element = document.getElementById(id);
-  element.style.display = "block";
+  element.style.display = "flex";
   dialog.style.display = "flex";
 }
 function closeDialog() {

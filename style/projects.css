@@ -272,6 +272,10 @@
 .dialog .card .content {
   display: none;
   overflow: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dialog .card .content .title {
