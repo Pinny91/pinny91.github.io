@@ -77,16 +77,16 @@
     // background-color: #2c2620;
     flex-grow: 1;
     margin: 0 1em;
-    max-height: 310px;
+    max-height: 100%;
     overflow-x: scroll;
-    overflow-y: visible;
+    overflow-y: hidden;
     .archive-projects {
       display: flex;
       justify-content: start;
       .archive-project {
         margin: 0;
         width: 275px;
-        height: 310px;
+        height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;

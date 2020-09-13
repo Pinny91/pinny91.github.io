@@ -127,9 +127,9 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 0 1em;
-  max-height: 310px;
+  max-height: 100%;
   overflow-x: scroll;
-  overflow-y: visible;
+  overflow-y: hidden;
 }
 
 .projects-main-section .archive .archive-projects {
@@ -144,7 +144,7 @@
 .projects-main-section .archive .archive-projects .archive-project {
   margin: 0;
   width: 275px;
-  height: 310px;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
