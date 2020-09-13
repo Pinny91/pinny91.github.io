@@ -104,8 +104,8 @@
   position: absolute;
   top: 0;
   left: 19vw;
-  height: 100%;
-  width: 150%;
+  height: 200%;
+  width: 200%;
   background: #c2d969;
   -webkit-transform: rotate(65deg);
           transform: rotate(65deg);
