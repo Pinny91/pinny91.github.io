@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pinny</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Play"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#Art">Art</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="content">
+        <div id="home" class=""></div>
+        <div id="info" class="section">
+          <div class="section__title">
+            <span class="section__title__text">It's me, Pinny</span>
+          </div>
+          <div class="section__sub">Matthias Pinnewaert</div>
+          <div class="section__text">
+            <p>
+              Hello, it is me, Matthias 'Pinny' Pinnewaert. A web developer
+              always looking for challenges, trying to improve and create a
+              better user experience. Born and raised in Belgium.
+            </p>
+            <p>
+              Story mode: I discovered programming at the end of my bachelor
+              degree in electronics and soon after started to learn HTML, css
+              and js (using jquery). Tried to apply for a job with no success in
+              the developer scene, after a while I found a job to program and
+              operate an industrial robot. (the robot had to fold metal pieces)
+              After learning the robot there was some dowmtime at the job which
+              created the opportunity to create an environment to improve the
+              workflow of the company. I created a platform for the employee's
+              where they can look things up, change things, ... in a faster and
+              user friendly environment than the ERP software had to offer. I
+              had to start from scratch and had no idea on how or what to start.
+              I started out trying out a bit of the most used frameworks and
+              made the choice to use Vue.js, the biggest reason for me was the
+              low entry curve. Later on this changed to the library Nuxt.js
+              which speeded up the process of creating the environment by a lot.
+              Now the project covers things from looking up to creating print
+              layouts for parts and even converting 3D drawings to 2D CNC
+              machine ready files. This project is now about 2 years of work in
+              my down time at work (when the robot is working) and I’m very
+              proud about it.
+              <a href="#project-lesage">
+                (A longer and more detailed explanation)
+              </a>
+              .
+            </p>
+            <p>
+              Other things I did in my spare time is learning the unreal engine
+              in combination with C++ (created a chess game and started some
+              other projects). Also started drawing a bit of pixel art. I also
+              game, watch series and make a bit of music (electronic drum &
+              bass).
+            </p>
+          </div>
+        </div>
+        <div id="projects" class="section">
+          <div class="section__title">
+            <span class="section__title__text">Projects</span>
+          </div>
+          <div class="projects">
+            <div class="project" id="project-lesage">
+              <div class="project__title">Portal Lesage</div>
+              <div class="project__time">2018 - ...</div>
+              <div class="project__technologies">
+                Vue.js, Nuxt.js, Node/Express, Vanilla js, git, iis, soap,
+                asp.net, c#, svg, css, sass, electron.js
+              </div>
+              <div class="project__detail-button">Details</div>
+              <div class="project__short">
+                This project is my main job at work and is still in development,
+                it is also my first project in Vue and my first full-stack
+                project. It uses the ERP database (and some other databases) to
+                visualise data for the employees, it’s a more user friendly
+                environment which allows the user to look-up things faster. As
+                time went by it grew a bit bigger. It includes a new system that
+                replaces the old excel files that contained the part information
+                and drawings. It also replaced a program that created ‘nestings’
+                of multiple parts for the laser (because of the new ERP program)
+                and it also replaced the old badge system that all the employees
+                have to use now when they do an operation of an order.
+              </div>
+              <div class="project__long">
+                <div class="project__long-text">
+                  Before starting this project I had only experience in html and
+                  jquery. So I can’t remember all the decisions but I’ll try to
+                  explain the things I remember. *Why use javascript and not use
+                  any other languages to write software? - At the time I really
+                  wanted to learn web development so js was an easy choice it
+                  was also the most flexible and the easiest to deploy and
+                  maintain (new version, update server and done, software is
+                  local so update on everyone's pc seemed a lot of work and at
+                  the time I had no idea how I could create an automatic update
+                  system) *Why use Vue.js? -With me having no experience and
+                  having to convince my boss I could create something in a short
+                  time period I quickly tested out the 3 biggest frameworks (at
+                  the time Vue was an upcoming one, but had a lot of promise if
+                  I believed my friend). The result of the test was that Vue
+                  felt the easiest and cleanest to use. (And I don’t regret that
+                  choice!) *Why Nuxt.js? - I still had no experience in
+                  developing anything and because there was a bit of pressure in
+                  the time window I had to prove myself I could do this. And
+                  found a boilerplate with nuxt and express back-end in one
+                  project. These were the 3 starting choices I had to make now
+                  I’ll try to pick stuff that was interesting to me breaking up
+                  the project in tiny parts. The deployment of the project The
+                  first deployment we used was via an linux server and using
+                  docker containers to deploy the project via nginx but because
+                  we wanted to use the filesystem of the company this was not
+                  possible via linux so we had to use an ftp server to upload
+                  files to the correct folder. But after a while we changed to a
+                  windows server so we didn’t need the fpt server anymore and to
+                  deploy it we used the nodeiis module to run it via iis And now
+                  via git I can just push it and build it on the server with a
+                  few clicks. The next big thing was the use of Electron.js A
+                  problem I could not fix was the ability to open files from the
+                  server because of browser security; this was not possible but
+                  then I discovered Electron.js. This way it was possible to
+                  open files with the correct server path. But one problem again
+                  was the maintenance of an app. At the time I just rendered the
+                  website in an electron environment and only used it to open
+                  files so there were no updates to be done. Later on I added
+                  more and more stuff like tabs so you can open multiple
+                  instances of the site in the app and in the latest update I
+                  made it so the app can be automatically updated by the user so
+                  no more manual installs, yay TL;DR The update system uses the
+                  electron-update package and looks at a static server where you
+                  can put the installer and a yml script created when you build
+                  the app For the static server I just use an IIS service on a
+                  windows server and allow it to see the files in the folder,
+                  now I just build it on the server and copy the files to the
+                  static folder and when they restart the app they will be asked
+                  to install the update. An order: In this picture you see an
+                  example of an order, this is probably the most used feature.
+                  It contains everything you need to see as an employee. The
+                  view shows information you need at least a few clicks if you
+                  want the same in the ERP software in addition the format and
+                  thumbnail of the part comes from a custom database that is
+                  used to create a ‘nesting’ to laser the parts (mode
+                  explanation will come later about this). It also allows you to
+                  open/add/delete files connected to the part, close operations
+                  (if an employee forgot to badge) and open the order or part in
+                  the ERP software (orange buttons)
+                </div>
+                <div class="project__long-image">
+                  <img
+                    src="assets/images/order_example.png"
+                    alt="order_example"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project" id="project-lesage">
+              <div class="project__title">Fools Chess</div>
+              <div class="project__time">2017</div>
+
+              <div class="project__technologies">
+                Unreal Engine
+              </div>
+              <div class="project__detail-button">Details</div>
+              <div class="project__short"></div>
+              <div class="project__long">
+                <div class="project__long-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
