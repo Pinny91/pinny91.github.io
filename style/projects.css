@@ -278,6 +278,24 @@
   position: relative;
 }
 
+.dialog .card::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.dialog .card::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.dialog .card::-webkit-scrollbar-thumb {
+  background-color: #c2d969;
+  border-radius: 16px;
+}
+
+.dialog .card::-webkit-scrollbar-button {
+  display: none;
+}
+
 .dialog .card .close-button {
   position: absolute;
   top: 5px;
