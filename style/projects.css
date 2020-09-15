@@ -16,6 +16,7 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 1440px;
+  width: 100vw;
   margin: auto;
 }
 
@@ -95,7 +96,9 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-height: 300px;
-  min-width: 45vw;
+  min-width: 750px;
+  width: 55vw;
+  max-width: 900px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
@@ -107,8 +110,8 @@
   position: absolute;
   z-index: 5;
   top: 0;
-  left: 20%;
-  height: 200%;
+  left: 10%;
+  height: 150%;
   width: 200%;
   background: #c2d969;
   -webkit-transform: rotate(65deg);
@@ -125,13 +128,28 @@
           flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   margin: 0 1em;
   max-height: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+
+.projects-main-section .archive::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.projects-main-section .archive::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.projects-main-section .archive::-webkit-scrollbar-thumb {
+  background-color: #c2d969;
+  border-radius: 16px;
+}
+
+.projects-main-section .archive::-webkit-scrollbar-button {
+  display: none;
 }
 
 .projects-main-section .archive .archive-projects {
