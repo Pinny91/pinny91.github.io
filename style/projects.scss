@@ -169,6 +169,7 @@
 .dialog {
   display: none;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100vw;
@@ -182,7 +183,7 @@
     min-width: 70vw;
     min-height: 70vh;
     max-width: 100vw;
-    overflow: scroll;
+    overflow-y: scroll;
     border-radius: 5px;
     padding: 20px;
     position: relative;
@@ -200,7 +201,6 @@
     }
     .content {
       display: none;
-      overflow: scroll;
       flex-direction: column;
       .title {
         text-align: center;
